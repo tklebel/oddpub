@@ -19,3 +19,4 @@ pre_process <- function(text_input, type = c("lines", "whole_text")) {
     stringr::str_replace_all(pattern = ",", replacement = "") %>%
     .correct_tokenization()
 }
+
