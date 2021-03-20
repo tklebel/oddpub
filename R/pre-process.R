@@ -5,6 +5,7 @@
 #' string representing a whole file.
 pre_process <- function(text_input, type = c("lines", "whole_text")) {
 
+  type <- match.arg(type)
   text_lines <- switch(type,
                        lines = paste(text_input, collapse = " "),
                        whole_text = text_input
